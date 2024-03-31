@@ -1,0 +1,5 @@
+docker build -t coddinginjava/{app_name}:{latest:some_number} .
+
+# as nginx is running on 80 in the container 
+
+docker run -p 4000:80 -d coddinginjava/{app_name}:{latest:some_number}
